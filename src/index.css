@@ -4,6 +4,8 @@
 body {
   background-color: white; /* 보라색 배경 */
   font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* App 컴포넌트 스타일 */
