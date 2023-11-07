@@ -50,6 +50,5 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^3.0.3"
-  },
-  "homepage": "https://dlskrud815.github.io/umc-week5-mission/"
+  }
 }

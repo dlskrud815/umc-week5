@@ -7,7 +7,7 @@ function Ad({ DisplayAd }) {
       <div className="ad-container">
         <img
           style={{ maxWidth: "100%" }} // 이미지 최대 너비 설정
-          src="/img/AdImage.svg"
+          src="Img/AdImage.svg"
           alt="Advertisement"
         />
       </div>
