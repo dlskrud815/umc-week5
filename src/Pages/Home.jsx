@@ -1,5 +1,5 @@
 import React from "react";
-import AdPage from "C://ReactWorkspace/umc-workbook/umc-week5/src/Components/AdPage.jsx";
+import AdPage from "../Components/AdPage.jsx";
 
 function Home() {
   return (

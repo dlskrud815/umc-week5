@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "C://ReactWorkspace/umc-workbook/umc-week5/src/Header.css"; // CSS 파일을 import
+import "../Header.css"; // CSS 파일을 import
 
 function Header() {
   return (

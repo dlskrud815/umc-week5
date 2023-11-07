@@ -1,6 +1,6 @@
 import React from "react";
-import Movie from "C://ReactWorkspace/umc-workbook/umc-week5/src/Components/Movie.jsx";
-import { movies } from "C://ReactWorkspace/umc-workbook/umc-week5/src/movieDummy.js"; // 영화 데이터
+import Movie from "../Components/Movie.jsx";
+import { movies } from "../movieDummy.js"; // 영화 데이터
 
 function Movies() {
   return (

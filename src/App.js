@@ -1,13 +1,11 @@
 import React from "react";
-import { HashRouter as BrowserRouter, Route, Routes } from "react-router-dom";
-//HahRouter as 추가해야 github pages 정상 작동
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Header from "./Components/Header";
 import Home from "./Pages/Home";
 import Movies from "./Pages/Movies";
 import Celebrity from "./Pages/Celebrity";
 import TV from "./Pages/TV";
-//import NotFound from "./Pages/NotFound";
 
 function App() {
   return (
