@@ -61,13 +61,14 @@ body {
 .movie-title {
   text-align: left; /* 영화 제목 왼쪽 정렬 */
   margin-right: 10px; /* 제목과 평점 사이의 간격 */
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 13px;
+  font-weight: normal;
 }
 
 .movie-rating {
   text-align: right; /* 영화 평점 오른쪽 정렬 */
   font-size: 13px;
+  font-weight: normal;
 }
 
 /* 영화 개요 스타일 */
