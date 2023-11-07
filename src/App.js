@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter as BrowserRouter, Route, Routes } from "react-router-dom";
+//HahRouter as 추가해야 github pages 정상 작동
 
 import Header from "./Components/Header";
 import Home from "./Pages/Home";
@@ -11,7 +12,7 @@ import TV from "./Pages/TV";
 function App() {
   return (
     <div className="root-wrap">
-      <BrowserRouter basename="/umc-week5-exercise">
+      <BrowserRouter>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
