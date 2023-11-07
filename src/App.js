@@ -11,7 +11,7 @@ import TV from "./Pages/TV";
 function App() {
   return (
     <div className="root-wrap">
-      <BrowserRouter>
+      <BrowserRouter basename="/umc-week5-exercise">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
