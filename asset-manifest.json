@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/umc-week5-mission/static/css/main.af066e06.css",
-    "main.js": "/umc-week5-mission/static/js/main.fc062284.js",
+    "main.js": "/umc-week5-mission/static/js/main.02aef2c0.js",
     "index.html": "/umc-week5-mission/index.html",
     "main.af066e06.css.map": "/umc-week5-mission/static/css/main.af066e06.css.map",
-    "main.fc062284.js.map": "/umc-week5-mission/static/js/main.fc062284.js.map"
+    "main.02aef2c0.js.map": "/umc-week5-mission/static/js/main.02aef2c0.js.map"
   },
   "entrypoints": [
     "static/css/main.af066e06.css",
-    "static/js/main.fc062284.js"
+    "static/js/main.02aef2c0.js"
   ]
 }
