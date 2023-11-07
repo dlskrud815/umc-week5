@@ -1,12 +1,11 @@
 /* Header.css */
 
 .header-container {
-  background-color: #22254b;
+  background-color: #032541;
   color: #fff;
   display: flex;
   justify-content: space-between; /* 수정: 로고와 내비게이션 링크 사이의 공간을 양쪽으로 분배 */
   align-items: center; /* 추가: 세로 중앙 정렬 */
-  padding: 10px 20px;
 }
 
 .logo {
@@ -16,6 +15,7 @@
 .nav-links {
   list-style: none;
   display: flex;
+  align-items: center; /* 세로 중앙 정렬 */
   gap: 30px;
   flex: 1;
 }
@@ -30,6 +30,31 @@
   color: #fff;
 }
 
-.nav-links a:hover {
-  text-decoration: underline;
+.login-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.welcome-message {
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+/* 추가: 버튼 스타일링 */
+.login-btn {
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
 }

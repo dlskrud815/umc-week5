@@ -4,8 +4,6 @@
 body {
   background-color: white; /* 보라색 배경 */
   font-family: Arial, sans-serif;
-  margin: 0; /* body의 margin을 제거합니다. */
-  padding: 0; /* body의 padding을 제거합니다. */
 }
 
 /* App 컴포넌트 스타일 */
@@ -17,10 +15,10 @@ body {
 /* 영화 목록 스타일 */
 .movie-list {
   display: grid;
-  grid-template-columns: repeat(8, 1fr); /* 8열로 나열 */
-  gap: 20px; /* 각 영화 사이 간격 */
+  grid-template-columns: repeat(6, 1fr); /* 8열로 나열 */
+  gap: 20px;
   justify-content: center;
-  margin: 20px;
+  margin: 20px 150px;
 }
 
 /* 각 영화 아이템 스타일 */
@@ -30,14 +28,15 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   cursor: pointer;
-  height: 350px;
+  width: 200px;
+  height: 390px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
 .movie img {
   width: 100%;
-  height: 280px;
+  height: 320px;
   display: block;
   object-fit: fill;
 }

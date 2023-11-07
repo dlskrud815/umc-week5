@@ -1,6 +1,6 @@
 import React from "react";
-import Movie from "./../Components/Movie.jsx";
-import { movies } from "./../movieDummy.js"; // 영화 데이터
+import Movie from "../Components/Movie.jsx";
+import { movies } from "../movieDummy.js"; // 영화 데이터
 
 function Movies() {
   return (

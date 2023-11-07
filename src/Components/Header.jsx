@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./../Header.css"; // CSS 파일을 import
+import "../Header.css"; // CSS 파일을 import
+import LoginControl from "./LoginControl";
 
 function Header() {
   return (
@@ -21,6 +22,9 @@ function Header() {
         </li>
         <li>
           <Link to="/people">인물</Link>
+        </li>
+        <li>
+          <LoginControl />
         </li>
       </ul>
     </header>
