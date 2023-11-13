@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
 export default function NotFound() {
   return (
@@ -11,6 +11,7 @@ export default function NotFound() {
           메인 페이지로 이동
         </Link>
       </p>
+      <Outlet />
     </div>
   );
 }
