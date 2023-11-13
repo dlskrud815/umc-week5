@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../Header.css"; // CSS 파일을 import
+import "../Header.css";
 import LoginControl from "./LoginControl";
 
 function Header() {
