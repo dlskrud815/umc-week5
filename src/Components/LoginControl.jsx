@@ -1,48 +1,39 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 
-class LoginControl extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isLoggedIn: false,
-    };
-  }
+const LoginControl = () => {
+  const [isLoggedIn, setLoggedIn] = useState(false);
 
-  handleLoginClick = () => {
-    this.setState({ isLoggedIn: true });
+  const handleLoginClick = () => {
+    setLoggedIn(true);
   };
 
-  handleLogoutClick = () => {
-    this.setState({ isLoggedIn: false });
+  const handleLogoutClick = () => {
+    setLoggedIn(false);
   };
 
-  render() {
-    const isLoggedIn = this.state.isLoggedIn;
-
-    return (
-      <div className="login-control">
-        {isLoggedIn ? (
-          <div className="login-content">
-            <button className="login-btn" onClick={this.handleLogoutClick}>
-              로그아웃
-            </button>
-            <div className="welcome-message">
-              <p>환영합니다!</p>
-            </div>
+  return (
+    <div className="login-control">
+      {isLoggedIn ? (
+        <div className="login-content">
+          <button className="login-btn" onClick={handleLogoutClick}>
+            로그아웃
+          </button>
+          <div className="welcome-message">
+            <p>환영합니다!</p>
           </div>
-        ) : (
-          <div className="login-content">
-            <button className="login-btn" onClick={this.handleLoginClick}>
-              로그인
-            </button>
-            <div className="welcome-message">
-              <p>로그인 해주세요!</p>
-            </div>
+        </div>
+      ) : (
+        <div className="login-content">
+          <button className="login-btn" onClick={handleLoginClick}>
+            로그인
+          </button>
+          <div className="welcome-message">
+            <p>로그인 해주세요!</p>
           </div>
-        )}
-      </div>
-    );
-  }
-}
+        </div>
+      )}
+    </div>
+  );
+};
 
 export default LoginControl;
