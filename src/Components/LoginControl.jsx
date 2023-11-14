@@ -35,5 +35,4 @@ const LoginControl = () => {
     </div>
   );
 };
-
 export default LoginControl;

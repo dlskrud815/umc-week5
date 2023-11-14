@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Header from "./Components/Header";
@@ -8,19 +8,26 @@ import Celebrity from "./Pages/Celebrity";
 import TV from "./Pages/TV";
 import MovieDetail from "./Pages/MovieDetail";
 import NotFound from "./Pages/NotFound";
+import Login from "./Pages/Login";
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   return (
     <div className="root-wrap">
       {/* <BrowserRouter basename="/umc-week5-mission/"> */}
       <BrowserRouter>
-        <Header />
+        <Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />{" "}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/movies" element={<Movies />} />
           <Route path="/tv-programs" element={<TV />} />
           <Route path="/people" element={<Celebrity />} />
           <Route path="/movie/:title" element={<MovieDetail />} />
+          <Route
+            path="/login"
+            element={<Login setIsLoggedIn={setIsLoggedIn} />}
+          />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
