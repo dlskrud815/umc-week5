@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../Login.css";
 
 const Login = ({ isLoggedIn, setIsLoggedIn }) => {
@@ -107,15 +107,14 @@ const Login = ({ isLoggedIn, setIsLoggedIn }) => {
         {isLoggedIn ? "로그아웃" : "확인"}
       </button>
       <div className="login-links">
-        {" "}
         {/* 로그인 링크들 */}
-        <a className="a1" href="/signin" title="회원가입">
+        <Link className="a1" to="/signin" title="회원가입">
           회원가입
-        </a>
+        </Link>
         <span className="separator">|</span> {/* 구분선 */}
-        <a className="a1" href="/lookfor" title="아이디/비밀번호 찾기">
+        <Link className="a1" to="/lookfor" title="아이디/비밀번호 찾기">
           아이디/비밀번호 찾기
-        </a>
+        </Link>
       </div>
     </div>
   );

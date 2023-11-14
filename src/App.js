@@ -30,6 +30,8 @@ function App() {
             path="/login"
             element={<Login setIsLoggedIn={setIsLoggedIn} />}
           />
+          <Route path="/signin" />
+          <Route path="/lookfor" />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
