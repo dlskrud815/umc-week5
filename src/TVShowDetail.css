@@ -1,21 +1,5 @@
-/* index.css */
-
-/* 전체 페이지 스타일 */
-body {
-  background-color: white; /* 보라색 배경 */
-  font-family: Arial, sans-serif;
-  margin: 0px;
-  padding: 0px;
-}
-
-/* App 컴포넌트 스타일 */
-.App {
-  text-align: center;
-  padding: 20px;
-}
-
-/* 영화 목록 스타일 */
-.movie-list {
+/* tv 프로그램 목록 스타일 */
+.tv-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr); /* 8열로 나열 */
   gap: 20px;
@@ -23,8 +7,8 @@ body {
   margin: 50px 150px;
 }
 
-/* 각 영화 아이템 스타일 */
-.movie {
+/* 각 tv 프로그램 아이템 스타일 */
+.tv {
   position: relative;
   background-color: #3f4486;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -36,15 +20,15 @@ body {
   border-bottom-right-radius: 5px;
 }
 
-.movie img {
+.tv img {
   width: 100%;
   height: 300px;
   display: block;
   object-fit: fill;
 }
 
-/* 영화 정보 스타일 변경 */
-.movie-info {
+/* tv 프로그램 정보 스타일 변경 */
+.tv-info {
   background-color: #3f4486; /* 짙은 보라색 배경 */
   color: white;
   padding: 10px;
@@ -58,21 +42,21 @@ body {
   right: 0;
 }
 
-.movie-title {
+.tv-title {
   text-align: left; /* 영화 제목 왼쪽 정렬 */
   margin-right: 10px; /* 제목과 평점 사이의 간격 */
   font-size: 13px;
   font-weight: normal;
 }
 
-.movie-rating {
+.tv-rating {
   text-align: right; /* 영화 평점 오른쪽 정렬 */
   font-size: 13px;
   font-weight: normal;
 }
 
-/* 영화 개요 스타일 */
-.movie-description {
+/* tv 프로그램 개요 스타일 */
+.tv-description {
   text-align: left;
   position: absolute;
   top: 0;
@@ -87,21 +71,45 @@ body {
   z-index: 1; /* 영화 정보 영역 위로 올라오게 설정 */
 }
 
-/* 호버 시 영화 개요 표시 */
-.movie:hover .movie-description {
+/* 호버 시 tv 프로그램 개요 표시 */
+.tv:hover .tv-description {
   display: block; /* 호버 시 개요를 보여줍니다. */
 }
 
-.movie-description-title {
+.tv-description-title {
   font-weight: bold; /* bold로 영화 제목 스타일링 */
   font-size: 13px;
   margin-bottom: 10px; /* 영화 제목 아래 여백 추가 */
 }
 
-.movie-description p {
+.tv-description p {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 15; /* 영화 개요가 15줄을 넘어가면 ... 표시 */
   overflow: hidden;
+  margin: 0;
+}
+
+.tv-detail-container {
+  display: flex;
+  margin: 50px 150px;
+}
+
+.tv-poster {
+  flex-shrink: 0;
+}
+
+.tv-poster img {
+  width: 200px;
+  height: 300px;
+  margin-right: 20px;
+}
+
+.tv-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.tv-details h2 {
   margin: 0;
 }

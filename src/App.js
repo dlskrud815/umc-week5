@@ -9,13 +9,14 @@ import TV from "./Pages/TV";
 import MovieDetail from "./Pages/MovieDetail";
 import NotFound from "./Pages/NotFound";
 import Login from "./Pages/Login";
+import TVShowDetail from "./Pages/TVShowDetail";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
     <div className="root-wrap">
-      {/* <BrowserRouter basename="/umc-week5-mission/"> */}
+      {/* <BrowserRouter basename="/umc-week7-exercise/"> */}
       <BrowserRouter>
         <Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />{" "}
         <Routes>
@@ -24,6 +25,7 @@ function App() {
           <Route path="/tv-programs" element={<TV />} />
           <Route path="/people" element={<Celebrity />} />
           <Route path="/movie/:title" element={<MovieDetail />} />
+          <Route path="/tv-programs/:title" element={<TVShowDetail />} />
           <Route
             path="/login"
             element={<Login setIsLoggedIn={setIsLoggedIn} />}
